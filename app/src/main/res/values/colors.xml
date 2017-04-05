@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#3F51B5</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="gray929292">#929292</color>
+    <color name="bg_radio_group">#e0e0e0</color>
+    <color name="bg_confirm_order_info">#ffa83e</color>
+
+
+    <color name="bg_single_query_yes">#f58220</color>
+
+
+    <color name="text_prompt_user">#f3613d</color>
+
+    <color name="et_hint">#c2b9b9</color>
+
+    <color name="text_blue">#ff0481ce</color>
+
+
+    <color name="text_gray">#ff868686</color>
+
+
+    <color name="bg_gray">#dedede</color>
+    <color name="bg_insurance_scheme_table">#ffffff</color>
+
+</resources>

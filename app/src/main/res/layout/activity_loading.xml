@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_loading"
+    style="@style/LibMatchMatch"
+    tools:context="sjtb.e_nci.com.centurypass.module.splash.LoadingActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_splash"
+        style="@style/LibMatchMatch">
+
+        <ImageView
+            style="@style/LibMatchMatch"
+            android:scaleType="fitXY"
+            android:src="@mipmap/splash_bg_newyear" />
+
+        <RelativeLayout
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp">
+
+            <infrastructure.ui.CircleProgressBar
+                android:id="@+id/pb_splash"
+                style="@style/LibMatchMatch"
+                app:border_color="@color/colorPrimary"
+                app:border_width="2dp"
+                app:duration_second="1" />
+
+            <TextView
+                style="@style/LibWrapWrap"
+                android:layout_centerInParent="true"
+                android:text="跳过"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/TextSmall" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_intro"
+        style="@style/LibMatchMatch">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            style="@style/LibMatchMatch" />
+
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/pager_indicator"
+            style="@style/LibWrapWrap"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <Button
+            android:id="@+id/btn_enter_home"
+            style="@style/LibWrapWrap"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/prj_enter_home_btn_round_background"
+            android:text="进入首页"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

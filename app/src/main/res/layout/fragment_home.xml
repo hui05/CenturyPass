@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LibMatchMatch">
+
+    <LinearLayout style="@style/LibMatchMatch.Vertical">
+
+        <!--轮播图-->
+        <RelativeLayout
+            android:id="@+id/rl_banner"
+            android:layout_width="match_parent"
+            android:layout_height="170dp">
+
+        </RelativeLayout>
+
+        <!--行驶城市-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginLeft="@dimen/MarginLeftRight"
+            android:layout_marginRight="@dimen/MarginLeftRight"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/LibWrapWrap"
+                android:text="行驶城市:"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/text_purchase" />
+
+            <EditText
+                android:id="@+id/et_travel_city"
+                style="@style/LibAutoWrap"
+                android:layout_marginLeft="@dimen/MarginLeftRight"
+                android:background="@null"
+                android:focusable="false"
+                android:hint="请输入城市"
+                android:maxLines="1"
+                android:textColor="@color/text_blue"
+                android:textColorHint="@color/et_hint"
+                android:textSize="@dimen/text_purchase" />
+
+            <ImageView
+                android:id="@+id/iv_travel_city"
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_marginLeft="@dimen/MarginLeftRight"
+                android:src="@mipmap/img_purchase_question" />
+
+        </LinearLayout>
+
+        <include layout="@layout/view_horizontal_line" />
+
+        <!--车牌号码-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginLeft="@dimen/MarginLeftRight"
+            android:layout_marginRight="@dimen/MarginLeftRight"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/LibWrapWrap"
+                android:text="车牌号码:"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/text_purchase" />
+
+            <EditText
+                android:id="@+id/et_plate_no"
+                style="@style/LibAutoWrap"
+                android:layout_marginLeft="@dimen/MarginLeftRight"
+                android:background="@null"
+                android:hint="请输入车牌号码"
+                android:maxLines="1"
+                android:maxLength="7"
+                android:textColor="@color/text_blue"
+                android:textColorHint="@color/et_hint"
+                android:textSize="@dimen/text_purchase" />
+
+            <TextView
+                android:id="@+id/tv_plate_no_whether"
+                style="@style/LibWrapMatch"
+                android:gravity="center_vertical"
+                android:text="未上牌"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/text_purchase" />
+
+            <ImageView
+                android:id="@+id/iv_plate_no_whether"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginBottom="-6dp"
+                android:layout_marginLeft="3dp"
+                android:src="@mipmap/img_purchase_unchecked" />
+
+        </LinearLayout>
+
+        <include layout="@layout/view_horizontal_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginRight="@dimen/MarginLeftRight"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_history_inquiry"
+                style="@style/LibWrapWrap"
+                android:layout_alignParentRight="true"
+                android:drawableLeft="@mipmap/img_purchase_search"
+                android:drawablePadding="3dp"
+                android:gravity="center_vertical"
+                android:text="历史询价" />
+        </RelativeLayout>
+
+        <!--立即出单-->
+        <Button
+            android:id="@+id/btn_place_order"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/bg_btn_next_selector"
+            android:gravity="center"
+            android:text="立即出单"
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#dedede" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/MarginLeftRight"
+                android:layout_marginRight="@dimen/MarginLeftRight"
+                android:layout_weight="1"
+                android:background="#dedede" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="合作保险公司"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/MarginLeftRight"
+                android:layout_marginRight="@dimen/MarginLeftRight"
+                android:layout_weight="1"
+                android:background="#dedede" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+</ScrollView>
